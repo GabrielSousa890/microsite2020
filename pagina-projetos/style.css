@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap');
+
+.box-cyan::after{
+    background-color: hsl(180, 62%, 55%)
+}
+.box-red::after{
+    background-color: hsl(0, 78%, 62%);
+}
+.box-orange::after{
+    background-color: hsl(34, 97%, 64%);
+}
+.box-blue::after{
+    background-color: hsl(212, 86%, 64%);
+}
+.box-sides{
+    transform: translateY(50%);
+}
+.box h2{
+    margin: 0;
+}
+
+h1 {
+    font-weight: 200;
+	margin: 0;
+}
+
+h1 span {
+	font-weight: 600;
+}
+
+p{
+color: hsl(229, 6%, 66%);
+}
+
+footer{
+    text-align: center;
+}

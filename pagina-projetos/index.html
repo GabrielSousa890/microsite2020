@@ -1,44 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Page</title>
+    <style>
+      
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
+      body {
+        background: #fefefe;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 50px;
+      }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      header{
+          margin: 50px auto;
+          max-width: 500px;
+          text-align: center;
+      }
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+        width: 1200px;
+        margin:0 auto;
+          max-width: 100%;
+          justify-content: center;
+      }
+      .box{
+          background-color: #fff;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 5px;
+          position: relative;
+          padding: 30px;
+          overflow: hidden;
+          width: 350px;
+          margin: 15px;
+      }
+      .box::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 5px;
+          width: 100%;
+      }
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Project page</title>
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Reliable, efficient delivery Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
-
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-
-  <footer>
-    <p class="attribution">
-      Coded by <a href="#">Nome do Aluno</a>.
-    </p>
-  </footer>
-</body>
+      .box img{
+          display: block;
+          margin-left: auto;
+      }
+      .box p{
+          margin: 15px 0 30px;
+      }
+ 
+      @media (max-width: 414px){
+          .box-sides{
+              transform: translateY(0);
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="mb-4">Reliable, efficient delivery <br><span class="mt-4">Powered by Technology</span></h1>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+    </header>
+    <div class="container">
+      <div class="box box-cyan box-sides">
+        <h2>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" alt="">
+      </div>
+      <div class="box box-red">
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="images/icon-team-builder.svg" alt="">
+      </div>
+      <div class="box box-blue box-sides">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="images/icon-calculator.svg" alt="">
+      </div>
+      <div class="box box-orange">
+        <h2>Karma</h2>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="images/icon-karma.svg" alt="">
+      </div>
+    </div>
+  </body>
 </html>
