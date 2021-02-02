@@ -1,0 +1,53 @@
+.attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+
+      body{
+          background-image: url("images/fundo1.png");
+          font-size: 18px;
+      }
+      
+      .cor-principal{
+          color: white;
+          font-size: x-large;
+      }
+
+      .row{
+          font-family: 'Rubik', sans-serif;
+          
+          
+      }
+
+      .location{
+          padding: 0 10px;
+          color: black;
+          text-decoration: none;
+      }
+
+      hr{ 
+          border: none;
+          border-left: 1px solid hsla(200, 10%, 50%,100);
+          border-color: rgb(189, 189, 189);
+          height: 90px;
+          margin: auto 0;
+          width:2px;     
+      }
+
+      nav{
+          width: 25%;
+      }
+
+      @media only screen and (max-width: 900px) {
+
+          body{
+            text-align: center;
+          }
+          
+          nav{
+              width: 100% !important;
+          }
+
+          hr{
+              display: none !important;
+          }
+          
+      }
